@@ -24,19 +24,19 @@ form {
 input, button {
     font-size: 18px;
     padding: 15px;
-    border: none;
+    border: 1px solid #ff007f; /* Dark pink border for buttons */
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
-    background-color: #ff007f; /* Dark pink button background */
+    background-color: #ff66b2; /* Light pink button background */
     color: #fff; /* White text color for buttons */
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #ff66b2; /* Light pink on hover effect */
+    background-color: #ff007f; /* Dark pink on hover effect */
 }
 
 #display {

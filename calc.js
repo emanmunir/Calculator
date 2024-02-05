@@ -13,3 +13,4 @@ function calculateResult() {
         document.calculator.display.value = 'Error';
     }
 }
+

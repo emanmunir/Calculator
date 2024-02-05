@@ -12,30 +12,30 @@
 
     <form name="calculator">
         <div class="calculator">
-            <div class="calculator__output">0</div>
+            <input type="text" class="calculator__output" name="display" readonly>
             <div class="calculator__keys">
-              <button class="calculator__key calculator__key--operator">+</button>
-              <button class="calculator__key calculator__key--operator">-</button>
-              <button class="calculator__key calculator__key--operator">&times;</button>
-              <button class="calculator__key calculator__key--operator">÷</button>
-              <button class="calculator__key">7</button>
-              <button class="calculator__key">8</button>
-              <button class="calculator__key">9</button>
-              <button class="calculator__key">4</button>
-              <button class="calculator__key">5</button>
-              <button class="calculator__key">6</button>
-              <button class="calculator__key">1</button>
-              <button class="calculator__key">2</button>
-              <button class="calculator__key">3</button>
-              <button class="calculator__key">0</button>
-              <button class="calculator__key">.</button>
-              <button class="calculator__key">AC</button>
-              <button class="calculator__key calculator__key--enter">=</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('7')">7</button>
+              <button  type="button"  class="calculator__key" onclick="appendToDisplay('8')">8</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('9')">9</button>
+              <button type="button" class="calculator__key calculator__key--operator" onclick="appendToDisplay('+')">+</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('4')">6</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('5')">5</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('6')">4</button>
+              <button type="button"  class="calculator__key calculator__key--operator" onclick="appendToDisplay('-')">-</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('1')">3</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('2')">2</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('3')">1</button>
+              <button type="button"  class="calculator__key calculator__key--operator" onclick="appendToDisplay('*')">&times;</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('.')">.</button>
+              <button  type="button" class="calculator__key" onclick="appendToDisplay('0')">0</button>
+              <button  type="button" class="calculator__key" onclick="clearDisplay()">AC</button>
+              <button  type="button" class="calculator__key calculator__key--operator" onclick="appendToDisplay('/')">÷</button>
+              <button  type="button" class="calculator__key calculator__key--enter" onclick="calculateResult()">=</button>
             </div>
-          </div>
+        </div>
     </form>
-
-    <script src="calc.js"> </script>
+    
+    <script src="calc.js"></script>
 
 </body>
 </html>

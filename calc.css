@@ -12,16 +12,21 @@ h2 {
 form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-gap: 10px;
     max-width: 300px;
     margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #ff007f; /* Dark pink border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
 }
 
 input, button {
     font-size: 18px;
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
@@ -39,7 +44,7 @@ button:hover {
     background-color: #fff; /* White display background */
     color: #ff007f; /* Dark pink text color for display */
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .glitter {

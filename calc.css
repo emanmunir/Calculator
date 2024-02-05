@@ -5,14 +5,7 @@ body {
     background-color: #ffd6e3; /* Light pink background */
 }
 
-h2 {
-    color: #ff007f; /* Dark pink text color */
-}
-
-form {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+.calculator {
     max-width: 300px;
     margin: 0 auto;
     padding: 20px;
@@ -21,46 +14,43 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
 }
 
-input, button {
-    font-size: 18px;
-    padding: 15px;
-    border: 1px solid #ff007f; /* Dark pink border for buttons */
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #ff66b2; /* Light pink button background */
-    color: #fff; /* White text color for buttons */
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ff007f; /* Dark pink on hover effect */
-}
-
-#display {
-    grid-column: span 4;
+.calculator__output {
     background-color: #fff; /* White display background */
     color: #ff007f; /* Dark pink text color for display */
-    width: 100%;
+    padding: 15px;
+    border: 1px solid #ff007f; /* Dark pink border for display */
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.glitter {
-    background-image: linear-gradient(45deg, #ff66b2, #ff007f, #ff66b2, #ff007f, #ff66b2); /* Glitter gradient */
-    background-size: 400% 400%;
-    animation: glitterAnimation 8s ease infinite;
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
-@keyframes glitterAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.calculator__key {
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid #ff007f; /* Dark pink border for keys */
+    border-radius: 5px;
+    background-color: #ff66b2; /* Light pink button background */
+    color: #fff; /* White text color for keys */
+    cursor: pointer;
+}
+
+.calculator__key:hover {
+    background-color: #ff007f; /* Dark pink on hover effect */
+}
+
+.calculator__key--operator {
+    background-color: #ff007f; /* Dark pink background for operator keys */
+}
+
+.calculator__key--operator:hover {
+    background-color: #ff66b2; /* Light pink on hover effect for operator keys */
+}
+
+.calculator__key--enter {
+    grid-column: span 4; /* Make the equals key span two columns */
 }
